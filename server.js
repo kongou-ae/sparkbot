@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 var config = {
   webhookUrl: 'https://'+ process.env.BOT_URL +'/flint',
   token: process.env.SPARK_ACCESS_TOKEN,
-  port: process.env.port
+  port: process.env.PORT
 };
 
 // init flint
