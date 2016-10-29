@@ -24,6 +24,10 @@ flint.hears('/hello', function(bot, trigger) {
 // define express path for incoming webhooks
 app.post('/flint', webhook(flint));
 
+app.get('/', function (req, res) {
+  res.send('Hello Express World!');
+});
+
 // start express server
 var server = app.listen(config.port, function () {
   flint.debug('Flint listening on port %s', config.port);
