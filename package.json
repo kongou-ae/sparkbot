@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kongou-ae/sparkbot-openshift.git"
+    "url": "git+https://github.com/kongou-ae/sparkbot.git"
   },
   "author": "kongou_ae",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kongou-ae/sparkbot-openshift/issues"
+    "url": "https://github.com/kongou-ae/sparkbot/issues"
   },
-  "homepage": "https://github.com/kongou-ae/sparkbot-openshift#readme",
+  "homepage": "https://github.com/kongou-ae/sparkbot#readme",
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",

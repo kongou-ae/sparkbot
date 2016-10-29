@@ -7,9 +7,9 @@ app.use(bodyParser.json());
 
 // flint options
 var config = {
-  webhookUrl: 'https://'+ process.env.OPENSHIFT_URL +'/flint',
-  token: process.env.HUBOT_SPARK_ACCESS_TOKEN,
-  port: process.env.OPENSHIFT_NODEJS_PORT
+  webhookUrl: 'https://'+ process.env.BOT_URL +'/flint',
+  token: process.env.SPARK_ACCESS_TOKEN,
+  port: process.env.port
 };
 
 // init flint
