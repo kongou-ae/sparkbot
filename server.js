@@ -25,7 +25,7 @@ flint.hears('/hello', function(bot, trigger) {
 app.post('/flint', webhook(flint));
 
 app.get('/', function (req, res) {
-  res.send('Hello Express World!' + webhookUrl);
+  res.send('Hello Express World!' + config.webhookUrl);
 });
 
 // start express server
