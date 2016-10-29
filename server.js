@@ -29,7 +29,7 @@ app.get('/', function (req, res) {
   res.send('Hello Express World!' + config.webhookUrl);
 });
 
-var j = schedule.scheduleJob('/2 * * * *', function(){
+var j = schedule.scheduleJob('*/2 * * * *', function(){
   bot.say('hello!!!');
 });
 
