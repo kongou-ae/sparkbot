@@ -30,7 +30,7 @@ app.get('/', function (req, res) {
 });
 
 var j = schedule.scheduleJob('*/2 * * * *', function(){
-  var bot = new Bot(Flint);
+  var bot = new Bot(flint);
   bot.say('hello!!!');
 });
 
