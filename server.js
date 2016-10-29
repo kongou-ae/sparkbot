@@ -2,6 +2,7 @@ var Flint = require('node-flint');
 var webhook = require('node-flint/webhook');
 var express = require('express');
 var bodyParser = require('body-parser');
+var schedule = require('node-schedule');
 var app = express();
 app.use(bodyParser.json());
 
@@ -26,6 +27,10 @@ app.post('/flint', webhook(flint));
 
 app.get('/', function (req, res) {
   res.send('Hello Express World!' + config.webhookUrl);
+});
+
+var j = schedule.scheduleJob('/2 * * * *', function(){
+  bot.say('hello!!!');
 });
 
 // start express server
