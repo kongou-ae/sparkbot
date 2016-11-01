@@ -19,7 +19,8 @@ exports.checkrss = function(spark) {
     'http://feeds.feedburner.com/AmazonWebServicesBlog',
     'http://aws.amazon.com/new/feed/',
     'http://feeds.feedburner.com/AmazonWebServicesBlogJp',
-    'http://qiita.com/tags/AWS/feed'
+    'http://qiita.com/tags/AWS/feed',
+    'https://azure.microsoft.com/ja-jp/updates/feed/'
   ];
 
   async.eachSeries(feeds, function(feed, callback){
