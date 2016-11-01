@@ -37,6 +37,10 @@ flint.hears('/hello', function(bot, trigger) {
   bot.say('Hello %s!', trigger.personDisplayName);
 });
 
+flint.hears('ぬるぽ', function(bot, trigger) {
+  bot.say('ガッ');
+});
+
 // define express path for incoming webhooks
 app.post('/flint', webhook(flint));
 

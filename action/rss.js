@@ -20,7 +20,11 @@ exports.checkrss = function(spark) {
     'http://aws.amazon.com/new/feed/',
     'http://feeds.feedburner.com/AmazonWebServicesBlogJp',
     'http://qiita.com/tags/AWS/feed',
-    'https://azure.microsoft.com/ja-jp/updates/feed/'
+    'http://status.aws.amazon.com/rss/all.rss',
+    'https://azure.microsoft.com/ja-jp/updates/feed/',
+    'https://azure.microsoft.com/en-us/blog/feed/',
+    'http://qiita.com/tags/Azure/feed',
+    'https://azure.microsoft.com/ja-jp/status/feed/'
   ];
 
   async.eachSeries(feeds, function(feed, callback){
