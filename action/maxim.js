@@ -13,7 +13,7 @@ exports.moudou = function(spark,trigger) {
 
   spark.sendMessage({
     roomId:trigger.roomId,
-    files:['https://'+ process.env.BOT_URL+'/images/moudou.jpg']
+    files:['https://'+ process.env.BOT_URL+'/images/moudou.png']
   }).then(function(res){
     /*Store the res data?*/
   });
