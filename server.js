@@ -49,6 +49,9 @@ flint.hears('/mada', function(bot, trigger) {
   maxim.mada(spark,trigger)
 });
 
+flint.hears('/moudou', function(bot, trigger) {
+  maxim.moudou(spark,trigger)
+});
 
 // define express path for incoming webhooks
 app.post('/flint', webhook(flint));
