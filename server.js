@@ -3,7 +3,8 @@ var webhook = require('node-flint/webhook');
 var express = require('express');
 var bodyParser = require('body-parser');
 var schedule = require('node-schedule');
-var rss = require('./action/rss.js')
+var rss = require('./action/rss.js');
+var annouce = require('./action/announce.js');
 
 var Spark = require('csco-spark');
 
@@ -28,6 +29,8 @@ var spark = Spark({
 var j = schedule.scheduleJob('0 * * * *', function(){
   rss.checkrss(spark)
 });
+
+annouce.schedule(spark)
 
 // init flint
 var flint = new Flint(config);
