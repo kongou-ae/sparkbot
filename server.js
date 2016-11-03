@@ -5,6 +5,7 @@ var bodyParser = require('body-parser');
 var schedule = require('node-schedule');
 var rss = require('./action/rss.js');
 var annouce = require('./action/announce.js');
+var maxim = require('./action/maxim.js');
 
 var Spark = require('csco-spark');
 
@@ -44,8 +45,14 @@ flint.hears('ぬるぽ', function(bot, trigger) {
   bot.say('ガッ');
 });
 
+flint.hears('/mada', function(bot, trigger) {
+  maxim.mada(spark,trigger)
+});
+
+
 // define express path for incoming webhooks
 app.post('/flint', webhook(flint));
+app.use('/images', express.static('images'));
 
 // document root
 app.get('/', function (req, res) {
