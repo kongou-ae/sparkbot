@@ -14,7 +14,7 @@ exports.schedule = function(spark) {
     sendMessage("そろそろお昼休みですよ。息抜きしましょ。")
   });
 
-  var j2 = schedule.scheduleJob('00 8 * * 1-5', function(){
+  var j2 = schedule.scheduleJob('00 7 * * 1-5', function(){
     sendMessage("定時が近づいてきました。残業しなきゃいけない人は残業申請！")
   });
 
